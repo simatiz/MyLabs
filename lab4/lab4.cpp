@@ -5,14 +5,14 @@
 
 using namespace std;
 int main() {
-	int n, k=0, a;
+	int n, k=1, a;
 	cin >> n;
 	a = n;
 	while (n / 10 != 0) {
 		n = n / 10;
 		k++;
 	}
-	for (int i = 1; i <= k; i++) {
+	for (int i = 1; i < k; i++) {
 		n += a % 10;
 		a = a / 10;
 	}
