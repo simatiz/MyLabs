@@ -5,9 +5,9 @@
 #include <algorithm>
 using namespace std;
 
-static void BubbleSort(int** a, int n) {
+static void BubbleSort(double** a, int n) {
 	bool flag = true;
-	int el;
+	double el;
 	while (flag) {
 		for (int i = 0; i < n-1; i++) {
 			flag = false;
@@ -21,8 +21,8 @@ static void BubbleSort(int** a, int n) {
 	}
 }
 
-static void Swap(int** a, int** b, int n) {
-	int el;
+static void Swap(double** a, double** b, int n) {
+	double el;
 	for (int i = 0; i < n; i++) {
 		el = a[i][i];
 		a[i][i] = b[i][i];
@@ -34,10 +34,10 @@ int main() {
 	int n;
 	cin >> n;
 
-	int** a = new int* [n];
-	for (int i = 0; i < n; i++) a[i] = new int[n];
-	int** b = new int* [n];
-	for (int i = 0; i < n; i++) b[i] = new int[n];
+	double** a = new double* [n];
+	for (int i = 0; i < n; i++) a[i] = new double[n];
+	double** b = new double* [n];
+	for (int i = 0; i < n; i++) b[i] = new double[n];
 
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
